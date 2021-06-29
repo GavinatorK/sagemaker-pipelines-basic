@@ -1,0 +1,49 @@
+# Lab 0: Starting Amazon SageMaker Studio
+
+<!--
+<img align="left" src="img/eyecatch_sagemaker.png"></br></br>
+-->
+
+## Beginning the Lab
+
+First we are going to start a SageMaker Studio instance. 
+
+1. From your AWS Console, Type sagemaker in the search bar and then select Select Amazon SageMaker.
+![Select SageMaker From Console](img/01-select-sm-console.png)
+2. Next Select **Amazon SageMaker Studio** from the SageMaker Console
+![Select SageMaker Studio](img/02-select-smstudio.png)
+3. Select **Quick Start** and then Click the dropdown for **Execution Role**. Here we allow SageMaker to be able to access any S3 buckets we create 
+![](img/03-smstudio-quickstart.png)
+4. Select **Create a new role**
+![](img/04-smstudio-iam-newrole.png)
+5. Ensure the permissions look like the picture and click **Create Role**
+![](img/05-smstudio-create-iam-role.png)
+6. Verify that the Role was creaed successfully and then click **Submit**
+![](img/06-smstudio-create-role-success.png)
+7. Your SageMaker Studio environment is now being created (takes 10-15 minutes)
+![](img/07-smstudio-create-pending.png)
+8. Once the SageMaker Studio environment has been created, click on **Open Studio**
+![](img/09-sm-open-studio.png)
+9. Wait until the SageMaker Studio environment has finished loading (5-10 mins)
+![](img/10-smstudio-loading.png)
+10. We are going to use SageMaker Studio's Git repo feature to clone the lab we are going to be running today. Click the **Git** button
+![](img/11-smstudio-git-button.png)
+11. Click **Clone a Repository** which will allow us to clone the Git repo
+![](img/12-smstudio-clone-button.png)
+12. Copy and Paste the following Git repo URL **<ENTER-GIT-REPO-URL>** and click the **Clone** button
+![](img/13-smstudio-clonerepo.png)
+13. Once the cloning of the Git repo has finished, SageMaker Studio will switch to the File Browser. Open the GIT cloned folder
+![](img/sm-studio-fm.png)
+14. Double click the Jupyter notebook (file with suffix **.ipynb**) which will then open in a new SageMaker Studio tab
+15. **NOTE** - if you see a window to select a kernel. Click the dropdown and select **Python 3 (Data Science)**, then click Select
+![](img/14-smstudio-select-kernel.png)
+![](img/15-smstudio-datascience.png)
+
+??? optional-class "Jupyter notebook instructions (expand for details)"
+	- Jupyter notebooks tell a story by combining explanatory text and code. There are two types of "cells" in a notebook:  code cells, and "markdown" cells with explanatory text.  
+	- You will be running the code cells.  These are distinguished by having "In" or "[ ]" next to them in the left margin next to the cell, and a greyish background.  Markdown cells lack "In" or "[ ]" and have a blank background.
+	- To run a code cell, simply click in it, then either click the **Play** arrow button in the notebook's toolbar, or use Control+Enter on Windows (Shift+Enter on Mac) from your computer's keyboard.  
+	- It may take a few seconds to a few minutes for a code cell to run (an asterick will appear in "[ ]" when running and will change to a number once execution has completed).  Please run each code cell in order, and only once, to avoid repeated operations.  For example, running the same training job cell twice might create two training jobs, possibly exceeding your service limits.
+
+
+
